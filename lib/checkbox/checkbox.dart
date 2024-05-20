@@ -40,7 +40,7 @@ class ZenithCheckBox extends StatelessWidget {
           Checkbox(
             onChanged: isEnabled ? onChanged : null,
             activeColor: defaultActiveColor,
-            fillColor: WidgetStateProperty.all(defaultActiveColor),
+            // fillColor: WidgetStateProperty.all(defaultActiveColor),
             value: value,
           ),
           Padding(
