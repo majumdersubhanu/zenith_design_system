@@ -55,17 +55,17 @@ class ElevationHelper {
     if (isDarkMode) {
       switch (elevation.round()) {
         case 0:
-          return AppColors().dark50;
+          return AppColors.dark50;
         case 2:
-          return AppColors().dark100;
+          return AppColors.dark100;
         case 4:
-          return AppColors().dark200;
+          return AppColors.dark200;
         case 8:
-          return AppColors().dark300;
+          return AppColors.dark300;
         case 12:
-          return AppColors().dark400;
+          return AppColors.dark400;
         default:
-          return AppColors().dark50;
+          return AppColors.dark50;
       }
     } else {
       return Colors.transparent;
