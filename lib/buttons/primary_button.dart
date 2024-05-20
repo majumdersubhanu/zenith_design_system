@@ -144,17 +144,17 @@ class ZenithOutlinedButton extends StatelessWidget {
   getOverlayColor() {
     switch (buttonType) {
       case ButtonType.primary:
-        return AppColors.primary300;
+        return AppColors.primary100;
       case ButtonType.secondary:
-        return AppColors.secondary300;
+        return AppColors.secondary100;
       case ButtonType.success:
-        return AppColors.success300;
+        return AppColors.success100;
       case ButtonType.warning:
-        return AppColors.warning300;
+        return AppColors.warning100;
       case ButtonType.error:
-        return AppColors.danger300;
+        return AppColors.danger100;
       default:
-        return AppColors.primary300;
+        return AppColors.primary100;
     }
   }
 }
