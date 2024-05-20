@@ -32,6 +32,7 @@ class ZenithRadioButton extends StatelessWidget {
       onTap: isEnabled ? () => onChanged(!value) : null,
       borderRadius: rounded ? BorderRadius.circular(30.0) : BorderRadius.zero,
       child: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
           Radio<bool>(
             value: true,
@@ -81,6 +82,7 @@ class ZenithRadioButtonIcon extends StatelessWidget {
     return InkWell(
       onTap: isEnabled ? () => onChanged(!value) : null,
       child: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
           Radio<bool>(
             value: true,
