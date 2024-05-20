@@ -46,7 +46,7 @@ class ZenithRadioButton extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: AppSpacing.space2),
             child: Text(
               label,
-              style: AppTextStyles.bodyLg.copyWith(color: defaultTextColor),
+              style: AppTextStyles.bodyLg.copyWith(color: AppColors.primary100),
             ),
           ),
         ],
@@ -103,7 +103,7 @@ class ZenithRadioButtonIcon extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: AppSpacing.space2),
             child: Text(
               label,
-              style: AppTextStyles.bodyLg.copyWith(color: defaultTextColor),
+              style: AppTextStyles.bodyLg.copyWith(color: AppColors.primary100),
             ),
           ),
         ],
