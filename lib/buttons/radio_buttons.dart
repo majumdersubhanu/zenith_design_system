@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zenith_design_system/spacing/app_spacing.dart';
 import 'package:zenith_design_system/typography/typography.dart';
 import '../colors/app_colors.dart';
 
@@ -41,10 +42,12 @@ class ZenithRadioButton extends StatelessWidget {
             activeColor: defaultActiveColor,
             fillColor: WidgetStateProperty.all(defaultActiveColor),
           ),
-          const SizedBox(width: 8),
-          Text(
-            label,
-            style: AppTextStyles.bodyLg.copyWith(color: defaultTextColor),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: AppSpacing.space2),
+            child: Text(
+              label,
+              style: AppTextStyles.bodyLg.copyWith(color: defaultTextColor),
+            ),
           ),
         ],
       ),
@@ -96,10 +99,12 @@ class ZenithRadioButtonIcon extends StatelessWidget {
             icon,
             color: isEnabled ? defaultActiveColor : defaultInactiveColor,
           ),
-          const SizedBox(width: 8),
-          Text(
-            label,
-            style: AppTextStyles.bodyLg.copyWith(color: defaultTextColor),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: AppSpacing.space2),
+            child: Text(
+              label,
+              style: AppTextStyles.bodyLg.copyWith(color: defaultTextColor),
+            ),
           ),
         ],
       ),
