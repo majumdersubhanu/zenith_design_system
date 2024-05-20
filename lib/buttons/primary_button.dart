@@ -48,6 +48,7 @@ class ZenithFlatButton extends StatelessWidget {
         iconColor: const WidgetStatePropertyAll(AppColors.surface50),
       ),
       child: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
           Icon(icon),
           const SizedBox(width: 8),
@@ -135,6 +136,7 @@ class ZenithOutlinedButton extends StatelessWidget {
         iconColor: WidgetStatePropertyAll(getBackgroundColor()),
       ),
       child: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
           Icon(icon),
           const SizedBox(width: 8),
