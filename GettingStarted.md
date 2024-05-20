@@ -123,6 +123,20 @@ Before generating a new SSH key, check if there are existing keys on your machin
     pub get
     ```
 
+### Step 9: Setup your branch
+
+1. Navigate into the cloned repository's directory:
+
+    ```powershell
+    cd zenith_design_system
+    ```
+
+2. Run the following command:
+
+    ```powershell
+    git checkout -b <branch-name>
+    ```
+
 ## Conclusion
 
 You have now set up SSH keys for Git on your Windows machine using PowerShell or Command Prompt, created a directory called `work`, cloned the `zenith_design_system` repository, and run `pub get` to fetch the necessary packages. This setup will allow you to securely access and work on your Git repositories.
