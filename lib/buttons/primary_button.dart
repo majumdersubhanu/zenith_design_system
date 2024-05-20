@@ -17,7 +17,7 @@ class ZenithFlatButton extends StatelessWidget {
 
   const ZenithFlatButton({
     super.key,
-    required this.buttonType,
+    this.buttonType = ButtonType.primary,
     required this.onTap,
     required this.label,
   });
