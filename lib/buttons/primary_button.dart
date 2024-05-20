@@ -14,12 +14,14 @@ class ZenithFlatButton extends StatelessWidget {
   final ButtonType buttonType;
   final void Function() onTap;
   final String label;
+  final IconData? icon;
 
   const ZenithFlatButton({
     super.key,
     this.buttonType = ButtonType.primary,
     required this.onTap,
     required this.label,
+    this.icon,
   });
 
   @override
@@ -42,8 +44,16 @@ class ZenithFlatButton extends StatelessWidget {
         textStyle: WidgetStatePropertyAll(AppTextStyles.bodyMdBold),
         padding: const WidgetStatePropertyAll(
             EdgeInsets.symmetric(vertical: 12, horizontal: 20)),
+        iconSize: const WidgetStatePropertyAll(16),
+        iconColor: const WidgetStatePropertyAll(AppColors.surface50),
       ),
-      child: Text(label),
+      child: Row(
+        children: [
+          Icon(icon),
+          const SizedBox(width: 8),
+          Text(label),
+        ],
+      ),
     );
   }
 
@@ -86,12 +96,14 @@ class ZenithOutlinedButton extends StatelessWidget {
   final ButtonType buttonType;
   final void Function() onTap;
   final String label;
+  final IconData? icon;
 
   const ZenithOutlinedButton({
     super.key,
     this.buttonType = ButtonType.primary,
     required this.onTap,
     required this.label,
+    this.icon,
   });
 
   @override
@@ -112,15 +124,23 @@ class ZenithOutlinedButton extends StatelessWidget {
         backgroundColor: WidgetStateColor.transparent,
         foregroundColor: WidgetStatePropertyAll(getBackgroundColor()),
         enableFeedback: true,
-        elevation: WidgetStatePropertyAll(0),
+        elevation: const WidgetStatePropertyAll(0),
         minimumSize: const WidgetStatePropertyAll(Size(113, 44)),
         splashFactory: InkRipple.splashFactory,
         overlayColor: WidgetStatePropertyAll(getOverlayColor()),
         textStyle: WidgetStatePropertyAll(AppTextStyles.bodyMdBold),
         padding: const WidgetStatePropertyAll(
             EdgeInsets.symmetric(vertical: 12, horizontal: 20)),
+        iconSize: const WidgetStatePropertyAll(16),
+        iconColor: WidgetStatePropertyAll(getBackgroundColor()),
       ),
-      child: Text(label),
+      child: Row(
+        children: [
+          Icon(icon),
+          const SizedBox(width: 8),
+          Text(label),
+        ],
+      ),
     );
   }
 
